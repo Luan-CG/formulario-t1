@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header> 
+        <h1> Cadastre-se</h1>
+        <h2> Compre ingressos e combos</h2>
+    </header>
+
+    <main> 
+        <form action="">
+            <fieldset>
+                <legend>Preencha os campos</legend>
+                <div>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="Escreva seu nome"/>
+                </div>
+                
+                <div>
+                <label for="email">Email:</label>
+                <input type="email" name="email" id="email" placeholder="Escreva seu email">
+                </div>
+
+                <div>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone" />
+                </div>
+
+                <div>
+                    <label for="estados">Estado:</label>
+                    <select>
+                        <option value="AC">AC</option>
+                        <option value="SP">SP</option>
+                        <option value="RJ">RJ</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacoes</legend>
+                <label for="site">Site:</label>
+                <input type="url" name="site" id="site">
+
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
+
+            <label for="nascimento">Data de nascimento:</label>
+            <input type="date" name="nascimento" id="nascimento">
+
+            </fieldset>
+
+        <fieldset>
+            <input type="checkbox" name="autorizacao" checked>
+            <label for="autorizacao">Concordo que utilizem meus dados</label>
+            <p> O uso de nosso site e regulado pelos termos de uso</p>
+            
+            <label for="documento">Documento PDF:</label>
+            <input type="file" name="documento" id="documento" accept="document/pdf"/>
+        </fieldset>    
+
+        <fieldset>
+            <img src="https://images.vexels.com/media/users/3/201138/isolated/lists/143b8e1550deda3eadf5a8c0045cbb0f-robo-de-brinquedo-plano.png" alt="robozinho" width="100"/>
+
+            <!-- input radio serve para selecionar apenas uma opcao, eles precisam trabalhar em grupo e esse grupo e separado atraves do atributo name, precisa ter o mesmo name para todos--> 
+            <input type="radio" name="robo" id="sourobo">
+            <label for="sim">Sou um robo</label>
+
+            <input type="radio" name="robo" id="naosourobo"/>
+            <label for="nao">Nao sou um robo</label>
+        </fieldset>
+
+    <input type="submit" value="Enviar">
+    <button>Enviar</button>
+    <button type="reset" ></button>
+    <button>teste</button>
+
+        </form>
+    </main>
+</body>
+</html>
